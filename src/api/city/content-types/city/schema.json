@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cities",
+  "info": {
+    "singularName": "city",
+    "pluralName": "cities",
+    "displayName": "City"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "restaurants": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::restaurant.restaurant",
+      "mappedBy": "city"
+    }
+  }
+}
