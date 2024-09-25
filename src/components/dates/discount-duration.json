@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_dates_discount_durations",
+  "info": {
+    "displayName": "Discount Duration",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "startDate": {
+      "type": "datetime"
+    },
+    "endDate": {
+      "type": "datetime"
+    }
+  }
+}

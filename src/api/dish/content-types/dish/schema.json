@@ -52,8 +52,10 @@
     "discount": {
       "type": "integer"
     },
-    "discount_lasts": {
-      "type": "datetime"
+    "discountDuration": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dates.discount-duration"
     }
   }
 }
