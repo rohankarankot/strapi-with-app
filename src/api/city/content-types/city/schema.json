@@ -4,7 +4,8 @@
   "info": {
     "singularName": "city",
     "pluralName": "cities",
-    "displayName": "City"
+    "displayName": "City",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -23,6 +24,10 @@
       "relation": "oneToMany",
       "target": "api::restaurant.restaurant",
       "mappedBy": "city"
+    },
+    "state": {
+      "type": "string",
+      "required": true
     }
   }
 }
