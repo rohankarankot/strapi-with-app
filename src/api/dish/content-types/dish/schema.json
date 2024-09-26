@@ -22,9 +22,9 @@
     "Description": {
       "type": "text"
     },
-    "restaurant": {
+    "restaurants": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::restaurant.restaurant",
       "inversedBy": "dishes"
     },
@@ -56,6 +56,12 @@
       "type": "component",
       "repeatable": false,
       "component": "dates.discount-duration"
+    },
+    "discount_offered_by": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::restaurant.restaurant",
+      "mappedBy": "dish"
     }
   }
 }

@@ -35,17 +35,23 @@
         "audios"
       ]
     },
-    "dishes": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::dish.dish",
-      "mappedBy": "restaurant"
-    },
     "city": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::city.city",
       "inversedBy": "restaurants"
+    },
+    "dish": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::dish.dish",
+      "inversedBy": "discount_offered_by"
+    },
+    "dishes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::dish.dish",
+      "mappedBy": "restaurants"
     }
   }
 }
