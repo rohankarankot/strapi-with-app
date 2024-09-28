@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_header_header_items",
+  "info": {
+    "displayName": "headerItem",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

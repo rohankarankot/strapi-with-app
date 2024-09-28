@@ -5,12 +5,5 @@
     "description": ""
   },
   "options": {},
-  "attributes": {
-    "startDate": {
-      "type": "datetime"
-    },
-    "endDate": {
-      "type": "datetime"
-    }
-  }
+  "attributes": {}
 }
