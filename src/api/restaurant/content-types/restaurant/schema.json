@@ -41,12 +41,6 @@
       "target": "api::city.city",
       "inversedBy": "restaurants"
     },
-    "dish": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::dish.dish",
-      "inversedBy": "discount_offered_by"
-    },
     "dishes": {
       "type": "relation",
       "relation": "manyToMany",
