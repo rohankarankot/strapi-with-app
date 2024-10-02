@@ -56,6 +56,10 @@
       "type": "component",
       "repeatable": false,
       "component": "dates.discount-duration"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Name"
     }
   }
 }
