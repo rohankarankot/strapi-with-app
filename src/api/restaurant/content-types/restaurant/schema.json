@@ -46,6 +46,10 @@
       "relation": "manyToMany",
       "target": "api::dish.dish",
       "mappedBy": "restaurants"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Name"
     }
   }
 }
